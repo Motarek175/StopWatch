@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="StopWatch App using js" />
+    <title>Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex items-center justify-center bg-[#272727] min-h-[100vh]">
+    <div
+      class="container flex items-center flex-col text-black rounded-3xl p-5 shadow-[0_0_20px_#595959]"
+    >
+      <div class="stop flex text-6xl">
+        <div class="hour flex justify-center items-center text-[#cecece]">
+          <span
+            class="relative text-[#cecece] before:absolute before:content-['hr'] before:top-[100%] before:left-[50%] before:-translate-x-[50%] before:text-[#cecece] before:text-3xl"
+            >00</span
+          >:
+        </div>
+        <div class="minute flex justify-center text-[#cecece]">
+          <span
+            class="relative text-[#cecece] before:absolute before:content-['min'] before:top-[100%] before:left-[50%] before:-translate-x-[50%] before:text-[#cecece] before:text-3xl"
+            >00</span
+          >:
+        </div>
+        <div class="second flex justify-center text-[#cecece]">
+          <span
+            class="relative text-[#cecece] before:absolute before:content-['sec'] before:top-[100%] before:left-[50%] before:-translate-x-[50%] before:text-[#cecece] before:text-3xl"
+            >00</span
+          >.
+        </div>
+        <div class="count text-[#cecece]">
+          <span class="text-4xl text-[#cecece]">00</span>
+        </div>
+      </div>
+      <div class="buttons flex gap-10 mt-16 items-center text-5xl">
+        <div
+          class="start text-white w-20 h-20 rounded-full bg-[#595959] relative flex items-center justify-center transition-all duration-300 ease-in-out before:content-['Start'] before:absolute before:top-[100%] before:left-[50%] before:-translate-x-[50%] before:bg-black before:text-white before:transition-all before:ease-in-out before:duration-300 before:text-[12px] before:px-[10px] before:py-[5px] before:opacity-0 before:rounded-[5px] hover:before:opacity-100"
+        >
+          <button class="w-full h-full">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+        <div
+          class="pause text-white bg-[#303030] w-20 h-20 rounded-full relative flex items-center justify-center transition-all duration-300 ease-in-out before:content-['Pause'] before:absolute before:top-[100%] before:left-[50%] before:-translate-x-[50%] before:bg-black before:text-white before:transition-all before:ease-in-out before:duration-300 before:text-[12px] before:px-[10px] before:py-[5px] before:opacity-0 before:rounded-[5px] hover:before:opacity-100"
+        >
+          <button class="w-full h-full">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+        </div>
+        <div
+          class="reset w- 20 h-20 bg-[#303030] rounded-full relative flex items-center justify-center transition-all duration-300 ease-in-out before:content-['Reset'] before:absolute before:top-[100%] before:left-[50%] before:-translate-x-[50%] before:bg-black before:text-white before:transition-all before:ease-in-out before:duration-300 before:text-[12px] before:px-[10px] before:py-[5px] before:opacity-0 before:rounded-[5px] hover:before:opacity-100"
+        >
+          <button class="w-full h-full">
+            <i class="fa-solid fa-reply text-white"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
